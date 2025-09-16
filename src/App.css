@@ -1,0 +1,132 @@
+@font-face {
+  font-family: 'Retrograde-Regular';
+  src: url('./assets/Retrograde-Regular.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Retrograde-Regular', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.home-container {
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  background-image: url('./assets/background-orange.png');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.home-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  box-sizing: border-box;
+}
+
+.encouragement-text {
+  font-size: 1.25rem;
+  color: #7d5a58;
+  margin-bottom: 0.5rem;
+  animation: fadeIn 1s ease-in-out;
+  transition: opacity 0.8s ease;
+  line-height: 0;
+
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.encouragement-text.hidden {
+  opacity: 0;
+  animation: fadeOut 0.8s ease forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.background-green {
+  background-image: url('./assets/background-green.png');
+}
+
+.home-controls {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.image-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.image-button img {
+  width: 100px;
+}
+
+.home-timer {
+  font-size: 60px;
+  color: #634645;
+  margin: 0;
+}
+
+.gif-image {
+  height:100px;
+}
+
+.home-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.home-button img {
+  width: 60px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.close-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.minimize-button {
+  position: absolute;
+  top: 10px;
+  right: 44px; /* 10px (close) + 24px (button width) + 10px (gap) */
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.minimize-button img {
+  width: 24px;
+  height: 24px;
+}
