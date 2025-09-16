@@ -2,8 +2,7 @@
 
 A simple Pomodoro timer desktop app built with React and Electron.
 
-![screenshot](./assets/screenshot.png) <!-- Replace or remove if you don't have a screenshot -->
-
+![screenshot]([./assets/screenshot.png](https://github.com/TevyTrial/ticki-tomato/issues/1#issue-3422713682)) 
 ## Features
 
 - Pomodoro timer with work and break modes
@@ -51,4 +50,5 @@ A simple Pomodoro timer desktop app built with React and Electron.
    npx electron-builder --win
    ```
    The packaged app will be in the `dist/win-unpacked` folder.
+
 
